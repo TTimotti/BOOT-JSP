@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* 화면 전체 높이로 설정 */
+}
+
+/* 헤더 스타일링 */
+header {
+	display: flex;
+	color: ghostwhite;
+	text-align: center;
+	flex: 0 1;
+}
+
+#logo {
+	width: 250px;
+}
+
+header nav {
+	flex: 1;
+	margin-top: auto;
+	display: flex;
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+}
+
+header nav ul li {
+	margin: 0;
+	flex: 1;
+	text-align: center;
+}
+
+header nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 10px 15px;
+	transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+	background-color: #f0f0f0;
+}
+
+/* 메인 콘텐츠 스타일링 */
+main {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+/* 사이드바 스타일링 */
+aside {
+	width: 250px;
+	background-color: #f0f0f0;
+	overflow-y: auto;
+	background-color: #333;
+	color: #fff;
+}
+
+aside ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+aside ul li a {
+	display: block;
+	color: #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+aside ul li a:hover {
+	background-color: #555;
+}
+
+aside .dropdown-menu {
+	display: none;
+	background-color: #444;
+	padding: 0;
+	top: 0;
+	width: 250px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+aside .dropdown-menu li {
+	margin-bottom: 5px;	
+}
+
+aside .dropdown-menu a {
+	display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 3px;
+}
+
+aside .dropdown-menu a:hover {
+	background-color: #f0f0f0;
+	color: #555;
+}
+
+aside .dropdown-menu.active {
+	display: block;
+}
+
+aside .menu-title {
+	margin-left: 5px;
+}
+
+aside .menu-inner {
+	margin-left: 15px;
+}
+
+
+/* 아티클 스타일링 */
+article {
+	flex: 1;
+}
+
+/* 푸터 스타일링 */
+footer {
+	color: ghostwhite;
+	background-color: #333;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
